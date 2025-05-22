@@ -20,7 +20,7 @@ To write a python program to find minimum steps to reach to specific cell in min
 #### Developed by: GOKULA PRIYA P
 #### Register Number: 212222040044
 
-```PY
+```
 class cell:
      
     def __init__(self, x = 0, y = 0, dist = 0):

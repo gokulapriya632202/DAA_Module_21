@@ -1,25 +1,20 @@
-
 # EX 3A Knight Tour & Count Path
-## DATE: 
+## DATE: 21.03.2025
 ## AIM:
 To write a python program to find minimum steps to reach to specific cell in minimum moves by knight
 
 ## Algorithm
 1. Use Breadth-First Search (BFS) starting from the knight’s position.
-   
 2. Enqueue the starting position with distance 0 and mark it as visited.
-   
 3. At each step, dequeue a cell and check if it is the target position.
-   
 4. If not, move the knight in all 8 possible moves and enqueue valid, unvisited cells with dist + 1.
-   
 5. Repeat until the target is reached, and return the number of steps (distance).
    
 ## Program:
-#### Program to implement to find minimum steps to reach to specific cell in minimum moves by knight.
-#### Developed by: GOKULA PRIYA P
-#### Register Number: 212222040044
 
+### Program to implement to find minimum steps to reach to specific cell in minimum moves by knight.
+**Developed by:** GOKULA PRIYA P  
+**Register Number:** 212222040044
 ```
 class cell:
      
@@ -33,8 +28,7 @@ def isInside(x, y, N):
         y >= 1 and y <= N):
         return True
     return False
-def minStepToReachTarget(knightpos,
-                         targetpos, N):
+def minStepToReachTarget(knightpos,targetpos, N):
     # add your code here
     #Start here
     dx = [2, 2, -2, -2, 1, 1, -1, -1]
@@ -60,16 +54,10 @@ if __name__=='__main__':
     N = 30
     knightpos = [1, 1]
     targetpos = [30, 30]
-    print(minStepToReachTarget(knightpos,
-                               targetpos, N))
+    print(minStepToReachTarget(knightpos,targetpos, N))
 ```
-
 ## Output:
-![image](https://github.com/user-attachments/assets/748b3a6e-6c75-4c90-ac55-22b032a8dd34)
-
-
-
-
+![Screenshot 2025-05-24 181527](https://github.com/user-attachments/assets/7a69a2fb-19ca-411e-86e0-e5f52299998c)
 
 ## Result:
 The program executed successfully, and the minimum number of steps for the knight to reach the target was calculated.
